@@ -3,6 +3,9 @@ if status is-interactive
 
     fish_vi_key_bindings
     
+    aliase vim='nvim'
+    alias pwsh='pwsh.exe'
+
     bind --mode insert --sets-mode default \cc repaint
     #bind -M insert \cc 'set fish_bind_mode default; commandline -f repaint'
 
