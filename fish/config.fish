@@ -3,7 +3,7 @@ if status is-interactive
 
     fish_vi_key_bindings
     
-    aliase vim='nvim'
+    alias vim='nvim'
     alias pwsh='pwsh.exe'
 
     bind --mode insert --sets-mode default \cc repaint
