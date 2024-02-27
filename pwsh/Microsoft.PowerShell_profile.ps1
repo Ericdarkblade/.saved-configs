@@ -18,9 +18,13 @@ function whereis ($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue | 
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
   }
-# Make-Link (Symbolic Link)
- function make-link ($target, $link) {
+# (Symbolic Link)
+ function lns ($target, $link) {
     New-Item -Path $link -ItemType SymbolicLink -Value $target
+} 
+# Hard Link
+ function lnh ($target, $link) {
+    New-Item -Path $link -ItemType HardLink -Value $target
 } 
   
   
