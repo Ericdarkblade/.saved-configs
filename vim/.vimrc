@@ -2,6 +2,8 @@ set relativenumber
 set number
 set linebreak
 
+set mouse=a
+
 map <space> <leader>
 
 " Greatest Rebind of all time
@@ -19,4 +21,13 @@ nmap <leader>sv :vsplit<CR>
 nmap <leader>sh :split<CR>
 nmap <leader>st :terminal<CR>
 
+" Plugin Management
 
+call plug#begin()
+
+Plug 'sqls-server/sqls.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+
+call plug#end()
